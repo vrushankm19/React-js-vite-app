@@ -1,5 +1,5 @@
-$primary-color: #0783ff;
-$primary-color-hover: #6aa8ff;
+$primary-color: #000;
+$primary-color-hover: #292929;
 
 .btn_primary{
     background-color: $primary-color;
@@ -10,12 +10,15 @@ $primary-color-hover: #6aa8ff;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     transition: all 0.3s ease-in-out;
     &:hover{
         background-color: $primary-color-hover;
         color: #fff;
-        transform: scale(1.1);
+        // transform: scale(1.1);
     }
 }
 

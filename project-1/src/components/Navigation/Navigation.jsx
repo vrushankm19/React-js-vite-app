@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className="{styles.nav-main}">
           <div className={styles.nav_flex}>
             <div className={styles.nav_flex_item}>
-                <img className={styles.nav_img} src="/public/images/logo.png" alt="" />
+                <img className={styles.nav_img} src="/public/images/logo.webp" alt="" />
             </div>
             <div className={styles.nav_flex_item}>
               <ul className={styles.nav_flex_item_ul}>

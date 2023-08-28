@@ -1,5 +1,44 @@
 .formfooter{
     &_con{
+        
+    }
+    &_flex{
+        display: flex;
+        gap: 10px;
+        margin-block: 20px;
+    }
+    &_data{
+        display: flex;
+    }
+    &_img{
+        width: 100%;
+        height: auto;
         display: block;
+        &_con{
+            flex: 1;
+        }
+    }
+    &_form{
+        flex: 1;
+        &_flex{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            margin-block: 20px;
+        }
+        &_fild{
+            // input filds css
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            &:focus{
+                border-color: #000;
+            }
+
+        }
     }
 }
