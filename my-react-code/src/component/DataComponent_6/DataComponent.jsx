@@ -1,4 +1,4 @@
-// React Component Fetching and Displaying Data. useing API
+// React Component Fetching and Displaying Data. useing API Using GET Method
 
 import React, { useState, useEffect } from 'react';
 

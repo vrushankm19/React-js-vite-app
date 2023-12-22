@@ -1,4 +1,4 @@
-// Send Data to Parent Component
+// Send Data to Parent Component from Child Component in React using Multiple(Individual) useState
 
 import React from "react";
 

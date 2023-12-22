@@ -1,4 +1,4 @@
-// Send Data to Parent Component and real time update Parent Component Data
+// Send Data to Parent Component and real time update Parent Component Data from Child Component in React using Multiple(Individual) useState
 
 import React,{ useState } from "react";
 

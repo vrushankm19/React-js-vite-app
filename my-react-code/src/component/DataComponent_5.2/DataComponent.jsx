@@ -1,5 +1,4 @@
-// Send Data to Parent Component and real time update Parent Component Data
-// use single useState() hook
+// Send Data to Parent Component and real time update Parent Component Data using Single useState
 
 import React,{ useState } from "react";
 

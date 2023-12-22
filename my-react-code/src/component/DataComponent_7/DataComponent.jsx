@@ -1,4 +1,4 @@
-// 7. Fetching data from an API endpoint using the useEffect hook GET method
+// 7. Fetching data from an API endpoint using the useEffect hook GET method and Displaying Data inside Card
 
 import React, { useState, useEffect } from 'react';
 import './DataComponent.scss';
