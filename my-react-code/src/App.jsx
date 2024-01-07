@@ -1,7 +1,7 @@
 // 4. Childe to Parent Component Communication(Data Transfer) in React
 
 import React from 'react';
-import UseStateProgram from './component/DataComponent_23/DataComponent.jsx';
+import UseStateProgram from './component/DataComponent_26/DataComponent.jsx';
 // import UseStateProgram from './component/DataComponent_8/DataComponent.jsx';
 
 // All component code title list and description
@@ -56,7 +56,16 @@ import UseStateProgram from './component/DataComponent_23/DataComponent.jsx';
 
 // 23 Using Router(Swich) and Route make Website URLs
 
-import { BrowserRouter } from 'react-router-dom';
+// 24 Using NavLink to make Website Menu Bar and NavLink is a special type of Link
+
+//****** useLocation  ******//
+
+// 25 useLocation to get Page Name and show the page name in Error Page
+
+//****** navigate Private Route  ******//
+
+// 26. Without Use useHistory() to redirect to private route
+
 
 
 

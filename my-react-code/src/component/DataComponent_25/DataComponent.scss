@@ -1,0 +1,31 @@
+.link{
+    &.active{
+        color: #f00;
+        background-color: #ffbdbd;
+    }
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    &:hover{
+        color: #f00;
+    }
+}
+h1{
+    color: #f00;
+    font-size: 5rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    b{
+        color: #f00;
+        text-decoration: underline;
+    }
+}
+body{
+    padding-top: 60px;
+}

@@ -1,83 +1,98 @@
-// all component list here
+# React Learning Repository
 
-# React Project
+This repository is a collection of React components and concepts that serve as a comprehensive guide for learning React. Each component and concept is explained briefly with code examples to help you understand and implement them in your React projects.
 
-This project is a collection of React components demonstrating various concepts using the `useState` and `useEffect` hooks.
+## useState Hook
 
-## Table of Contents
+1. **Simple Counter**
+   - Implementation of a basic counter using the useState hook.
 
-- [React Project](#react-project)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Components](#components)
-    - [1. Simple Counter](#1-simple-counter)
-    - [2. Two Way Data Binding](#2-two-way-data-binding)
-    - [3. Multiple States](#3-multiple-states)
-    - [4. Child to Parent Communication](#4-child-to-parent-communication)
-    - [5. Send Data to Parent Component](#5-send-data-to-parent-component)
-    - [6. Component Fetching and Displaying Data](#6-component-fetching-and-displaying-data)
-    - [7. Fetching Data from API](#7-fetching-data-from-api)
-    - [8. POST Method using Fetch](#8-post-method-using-fetch)
-    - [9. Toggle Data with Button](#9-toggle-data-with-button)
-    - [10. Todo List with useState](#10-todo-list-with-usestate)
-    - [11. Short Circuit Evaluation](#11-short-circuit-evaluation)
-    - [12. Login Form](#12-login-form)
+2. **Two Way Data Binding**
+   - Example showcasing two-way data binding using the useState hook.
 
-## Introduction
+3. **Multiple States in React**
+   - Implementation of multiple states in React with input boxes and a date picker.
 
-Brief introduction about the project and its purpose.
+4. **Child to Parent Communication**
+   - Demonstration of data transfer from child to parent component.
 
-## Components
+5. **Send Data to Parent Component**
+   - 5.1 Real-time update using multiple (individual) useState.
+   - 5.2 Real-time update using a single useState.
 
-### 1. Simple Counter
+6. **React Component Fetching and Displaying Data**
+   - Fetching and displaying data from an API using the GET method.
 
-Using the `useState` hook to create a simple counter.
+7. **Fetching Data from API using useEffect**
+   - Fetching data from an API endpoint using the useEffect hook and displaying it in a card.
 
-### 2. Two Way Data Binding
+8. **POST Method with Fetch API**
+   - Performing a POST method using the fetch API in React.
 
-Description for the component demonstrating two-way data binding with `useState`.
+9. **Toggle Data with Button**
+   - Toggle between 'Hello World' and 'Hello Bharat' using the useState hook.
 
-### 3. Multiple States
+10. **Todo List with useState**
+    - Creating a todo list using useState and removing items using the filter method.
 
-Implementing multiple states in React with input boxes and a date picker.
+11. **Short Circuit Evaluation in React**
+    - Utilizing the && and || operators for short circuit evaluation.
 
-### 4. Child to Parent Communication
+## useEffect Hook
 
-Demonstrating data transfer from child to parent component.
+12. **Login Form with React**
+    - Handling a basic form with React hooks.
 
-### 5. Send Data to Parent Component
+13. **Login Form with useEffect**
+    - Handling a basic form with React hooks and useEffect.
 
-5.1. Send Data to Parent Component and real-time update Parent Component Data from Child Component using Multiple(Individual) `useState`.
+14. **Conditional Rendering with Short Circuit**
+    - Rendering ChildComponent conditionally using short circuit evaluation.
+  
+15. **Fetching Data from API with Loading Component**
+    - Fetching data from an API and conditionally rendering a loading component.
 
-5.2. Send Data to Parent Component and real-time update Parent Component Data using Single `useState`.
+## useRef Hook
 
-### 6. Component Fetching and Displaying Data
+16. **Focus on Input Field with useRef**
+    - Utilizing the useRef hook to focus on an input field when the component mounts.
 
-Fetching and displaying data inside a component using API with the GET method.
+## useReducer Hook
 
-### 7. Fetching Data from API
+17. **Simple Counter with useReducer**
+    - Creating a simple counter with increment and decrement functionality using the useReducer hook.
 
-Fetching data from an API endpoint using the `useEffect` hook and displaying data inside a card.
+## Context API
 
-### 8. POST Method using Fetch
+18. **Passing Data with createContext**
+    - Using the createContext hook to pass data from a parent component (DataComponent) to a child component (ChildComponent) in React.
 
-Using the `fetch` API to make a POST request in React.
+## useContext Hook
 
-### 9. Toggle Data with Button
+19. **Passing Data with useContext**
+    - Implementing the useContext hook to pass data from a parent component to a child component in React.
 
-Click on a button to toggle data between 'Hello World' and 'Hello Bharat' using the `useState` hook.
+## Custom Hooks
 
-### 10. Todo List with useState
+20. **Create Custom Hooks**
+    - Creating a custom hook with functionalities for counting, incrementing, decrementing, and resetting.
 
-Creating a Todo List using `useState` and removing items from the list using the filter method.
+21. **Another Custom Hook**
+    - Creating another custom hook for additional functionalities.
 
-### 11. Short Circuit Evaluation
+## Routing
 
-Using `&&` and `||` operators for short-circuit evaluation in React.
+22. **Using Router (Switch) and Route**
+    - Implementing Router (Switch) and Route to manage website URLs.
 
-### 12. Login Form
+23. **Using NavLink for Website Menu Bar**
 
-Creating a login form in React and handling basic form with `useState` hook.
+## useLocation Hook
 
-Feel free to explore each component for a detailed explanation and code examples.
+24. **Getting Page Name with useLocation**
+    - Using useLocation to get the page name and displaying it in the Error Page.
 
+## Navigate Private Route
+
+25. **Redirect to Private Route without useHistory()**
+    - Redirecting to a private route without using useHistory().
