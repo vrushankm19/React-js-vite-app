@@ -21,7 +21,6 @@ const ReduxUsingMakeTodoList = () => {
         let innData = [...todo, { id: 3, title: { addTodo } }];
         setTodo(innData);
     }
-
     
     return (
       <>
