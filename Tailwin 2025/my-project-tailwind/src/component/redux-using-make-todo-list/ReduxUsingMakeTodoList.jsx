@@ -34,7 +34,7 @@ const ReduxUsingMakeTodoList = () => {
             className="bg-blue-500 text-white px-4 py-2 rounded"
             onClick={() => AddTodoItems()}
           >
-            Add Todo
+            Add Todoo
           </button>
         </div>
         {/* <p>{addNewTodo}</p> */}
