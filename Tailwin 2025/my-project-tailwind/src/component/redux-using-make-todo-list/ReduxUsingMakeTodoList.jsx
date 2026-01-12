@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addtodo, removetodo } from "../../redux/slices/todoSlice";
+import { addtodo, removetodo, edittodo } from "../../redux/slices/todoSlice";
 
 const ReduxUsingMakeTodoList = () => {
   let todo = useSelector((state) => state.todo);
   const dispatch = useDispatch();
 
   let [addNewTodo, setAddNewTodo] = useState("");
+  let [editId, setEditId] = useState();
+  let [btnLogic, setBtnLogic] = useState(false);
 
   let AddTodoItems = () => {
     dispatch(addtodo(addNewTodo));
@@ -15,6 +17,20 @@ const ReduxUsingMakeTodoList = () => {
 
   let removeTodoItems = (id) => {
     dispatch(removetodo(id));
+  };
+
+  let editTodoItems = (id, oldTitle) => {
+    setAddNewTodo(oldTitle);
+    setEditId(id);
+    setBtnLogic(true);
+  };
+
+  const SaveTodoItems = () => {
+    if (!addNewTodo.trim()) return;
+    dispatch(edittodo({ id: editId, title: addNewTodo }));
+    setAddNewTodo("");
+    setEditId(null);
+    setBtnLogic(false);
   };
 
   return (
@@ -30,12 +46,22 @@ const ReduxUsingMakeTodoList = () => {
             value={addNewTodo}
             onChange={(ele) => setAddNewTodo(ele.target.value)}
           />
-          <button
-            className="bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={() => AddTodoItems()}
-          >
-            Add Todoo
-          </button>
+          {!btnLogic && (
+            <button
+              className="bg-blue-500 text-white px-4 py-2 rounded"
+              onClick={() => AddTodoItems()}
+            >
+              Add Todoo
+            </button>
+          )}
+          {btnLogic && (
+            <button
+              className="bg-green-500 text-dark px-4 py-2 rounded"
+              onClick={() => SaveTodoItems()}
+            >
+              Save
+            </button>
+          )}
         </div>
         {/* <p>{addNewTodo}</p> */}
         {todo.map((items) => (
@@ -44,12 +70,20 @@ const ReduxUsingMakeTodoList = () => {
             key={items.id}
           >
             <span>{items.title}</span>
-            <button
-              className="text-white px-4 py-2 rounded cursor-pointer"
-              onClick={() => removeTodoItems(items.id)}
-            >
-              🗑️
-            </button>
+            <div className="flex gap-2">
+              <button
+                className="text-white px-4 py-2 rounded cursor-pointer bg-white"
+                onClick={() => removeTodoItems(items.id)}
+              >
+                🗑️
+              </button>
+              <button
+                className="text-white px-4 py-2 rounded cursor-pointer bg-white"
+                onClick={() => editTodoItems(items.id, items.title)}
+              >
+                ✏️
+              </button>
+            </div>
           </li>
         ))}
       </div>
