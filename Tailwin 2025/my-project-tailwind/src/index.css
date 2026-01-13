@@ -4,5 +4,5 @@
     box-sizing: border-box;
 }
 .todo-card {
-    @apply block bg-blue-200 rounded-[5px] p-4 my-2 cursor-pointer;
+    @apply block rounded-[5px] p-4 my-2 cursor-pointer;
 }
