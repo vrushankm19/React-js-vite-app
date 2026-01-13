@@ -3,6 +3,7 @@ import TodoListWithContextAPI from "../component/react-todo-with-context-api/Tod
 import HookPrecticeTodoListWithContextAPI from "../component/hook-prectice-todo-list-with-context-api/HookPrecticeTodoListWithContextAPI.jsx";
 import ReduxUsingMakeCounter from "../component/redux-using-make-counter/ReduxUsingMakeCounter.jsx";
 import ReduxUsingMakeTodoList from "../component/redux-using-make-todo-list/ReduxUsingMakeTodoList.jsx";
+import ReduxAsyncThunkTodoList from "../component/redux-async-thunk-todo-list/ReduxAsyncThunkTodoList.jsx";
 
 const linksData = [
   {
@@ -33,22 +34,31 @@ const linksData = [
       "Is project me maine React Hooks aur Context API ka use karke ek Todo List application banayi hai. Isme user todo add, edit aur delete kar sakta hai. Data ko localStorage me store kiya gaya hai taaki page refresh hone par bhi data safe rahe. Context API ke through state management ko simplify kiya gaya hai, jisse components ke beech data sharing asaan ho jati hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
   },
   {
-    id: 3,
+    id: 4,
     path: "/redux-using-make-counter",
-    component: ReduxUsingMakeTodoList,
+    component: ReduxUsingMakeCounter,
     title: "Redux Using Make Counter",
     date: "05-06-2026",
     description:
-      "Is project me maine Redux ka use karke ek simple counter application banayi hai. Isme user counter ko increment aur decrement kar sakta hai. Redux ke through state management ko centralize kiya gaya hai, jisse application ka state predictable aur manageable ban jata hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
+      "Is project me maine Redux ka use karke ek simple counter application banayi hai. use local storage for store data. Isme user counter ko increment aur decrement kar sakta hai. Redux ke through state management ko centralize kiya gaya hai, jisse application ka state predictable aur manageable ban jata hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
   },
   {
-    id: 3,
-    path: "/redux-using-make-counter",
+    id: 5,
+    path: "/redux-using-make-todo-list",
     component: ReduxUsingMakeTodoList,
     title: "Redux Using Make Todo List",
     date: "06-06-2026",
     description:
-      "Is project me maine Redux ka use karke ek simple Todo List application banayi hai. Isme user todo add, edit aur delete kar sakta hai. Redux ke through state management ko centralize kiya gaya hai, jisse application ka state predictable aur manageable ban jata hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
+      "Is project me maine Redux ka use karke ek simple Todo List application banayi hai. use local storage for store data. Isme user todo add, edit aur delete kar sakta hai. Redux ke through state management ko centralize kiya gaya hai, jisse application ka state predictable aur manageable ban jata hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
+  },
+  {
+    id: 5,
+    path: "/redux-async-thunk-todo-list",
+    component: ReduxAsyncThunkTodoList,
+    title: "Redux Async Thunk Todo List",
+    date: "12-01-2026",
+    description:
+      "Is project me maine Redux Toolkit aur Redux Thunk ka use karke ek advanced Todo List application banayi hai. Isme user todo add, edit aur delete kar sakta hai. Redux Thunk ke through asynchronous actions ko handle kiya gaya hai, jisse API calls aur side effects ko manage karna asaan ho jata hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
   },
 ];
 
