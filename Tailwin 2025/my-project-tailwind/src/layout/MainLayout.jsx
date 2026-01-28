@@ -14,16 +14,26 @@ const MainLayout = () => {
         }`}
       >
         {/* Arrow Button */}
-        <button onClick={() => setOpen(!open)} className="text-xl font-bold">
+        {!open && (
+          <Link
+            to="/"
+            className="text-xl font-bold block"
+            title="Back to Dashbord"
+          >
+            ⏪
+          </Link>
+        )}
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-xl font-bold"
+          title="Show Other File"
+        >
           {open ? "⬅" : "➡"}
         </button>
 
         {/* Content only when open */}
         {open && (
           <>
-            <Link to="/" className="block p-2 text-dark px-3">
-              👈 Back To Home
-            </Link>
             <MainLinks aside={false} />
           </>
         )}

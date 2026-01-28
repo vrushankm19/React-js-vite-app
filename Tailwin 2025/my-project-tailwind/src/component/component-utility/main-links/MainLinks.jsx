@@ -22,11 +22,7 @@ const MainLinks = ({ aside }) => {
               key={item.id}
               to={item.path}
               className={({ isActive }) =>
-                `todo-card border ${
-                  isActive
-                    ? "border-dark bg-yellow-200"
-                    : "border-blue-200 bg-blue-200"
-                }`
+                `todo-card ${isActive ? " bg-yellow-200" : " bg-blue-200"}`
               }
             >
               <LinkCardUi

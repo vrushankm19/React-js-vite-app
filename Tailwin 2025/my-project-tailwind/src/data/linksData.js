@@ -52,7 +52,7 @@ const linksData = [
       "Is project me maine Redux ka use karke ek simple Todo List application banayi hai. use local storage for store data. Isme user todo add, edit aur delete kar sakta hai. Redux ke through state management ko centralize kiya gaya hai, jisse application ka state predictable aur manageable ban jata hai. Is project me bhi React Router ka use karke multiple pages ka navigation implement kiya gaya hai.",
   },
   {
-    id: 5,
+    id: 6,
     path: "/redux-async-thunk-todo-list",
     component: ReduxAsyncThunkTodoList,
     title: "Redux Async Thunk Todo List",
